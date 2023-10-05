@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+aside {
+  padding: 20px 31px 44px 25px;
+  width: 194px;
+  height: 100%;
+}
+aside .logo {
+  display: inherit;
+  margin: 0 auto 0 auto;
+  margin-bottom: 32px;
+}
+aside .btns {
+  height: 392px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+aside .btns div {
+  height: 40px;
+  padding: 10px 14px;
+  display: flex;
+  gap: 22px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 10px 0px rgba(175, 137, 255, 0.15);
+  font-family: "Poppins", sans-serif;
+}
+aside .support {
+  height: 166px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 50px;
+}
+aside .support b {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+aside .support p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(191, 191, 191);
+  font-family: "Poppins", sans-serif;
+}
+aside .support button {
+  width: 128px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  background: rgb(195, 223, 250);
+  border: none;
+}
+aside .policy {
+  color: rgb(191, 191, 191);
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 80%;
+  height: 100%;
+  padding: 28px 28px 39px 28px;
+  background: rgb(248, 247, 252);
+}
+main header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+main header .total p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+main header .total div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+main header .total div b {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+main header .total div span {
+  display: flex;
+  gap: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(255, 69, 136);
+}
+main header .total div span:last-child {
+  color: rgb(25, 195, 50);
+}
+main header .search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  width: 395px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 12px 17px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1) inset;
+}
+main header .search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+main header .search input::-moz-placeholder {
+  color: rgb(210, 210, 210);
+}
+main header .search input::placeholder {
+  color: rgb(210, 210, 210);
+}
+main header .profile {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+main section .top {
+  display: flex;
+  gap: 28px;
+  height: 120px;
+}
+main section .top div {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 21px 28px 0 28px;
+  color: #fff;
+  position: relative;
+}
+main section .top div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+main section .top div span {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+main section .top div:nth-child(1) {
+  background: linear-gradient(98.86deg, #6BAAFC 0%, #305FEC 100%);
+}
+main section .top div:nth-child(2) {
+  background: linear-gradient(98.86deg, #EF5E7A 0%, #D35385 100%);
+}
+main section .top div:nth-child(3) {
+  background: linear-gradient(98.86deg, #D623FE 0%, #A530F2 100%);
+}
+main section .info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 28px;
+}
+main section .info .left {
+  width: 60%;
+}
+main section .info .left div {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+main section .info .left div:first-child {
+  height: 153px;
+  background-color: rgb(109, 128, 229);
+  margin-bottom: 28px;
+}
+main section .info .left div:last-child {
+  height: 344px;
+  background: rgb(33, 139, 216);
+}
+main section .info .right {
+  width: 40%;
+  height: 525px;
+  background: rgb(234, 139, 139);
+  border-radius: 15px;
+}/*# sourceMappingURL=style.css.map */
