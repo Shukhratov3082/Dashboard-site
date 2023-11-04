@@ -27,15 +27,22 @@ aside .btns {
   flex-direction: column;
   gap: 31px;
 }
-aside .btns div {
+aside .btns .btn-boxs {
+  max-width: 144px;
   height: 40px;
-  padding: 10px 14px;
+  padding: 10px 0px;
   display: flex;
-  gap: 22px;
+  align-items: center;
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 4px 10px 0px rgba(175, 137, 255, 0.15);
   font-family: "Poppins", sans-serif;
+}
+aside .btns .btn-boxs .image-div {
+  width: 51px;
+  padding-left: 11px;
+  display: flex;
+  align-items: center;
 }
 aside .support {
   height: 166px;
@@ -79,7 +86,7 @@ main {
   width: 80%;
   height: 100%;
   padding: 28px 28px 39px 28px;
-  background: rgb(248, 247, 252);
+  background-color: gray;
 }
 main header {
   width: 100%;
@@ -179,6 +186,11 @@ main section .top div:nth-child(2) {
 main section .top div:nth-child(3) {
   background: linear-gradient(98.86deg, #D623FE 0%, #A530F2 100%);
 }
+main section .top div img {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
 main section .info {
   width: 100%;
   height: 100%;
@@ -187,20 +199,108 @@ main section .info {
 }
 main section .info .left {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main section .info .left div {
-  width: 100%;
-  height: 100%;
+main section .info .left .inbox {
+  background-color: white;
   border-radius: 15px;
-}
-main section .info .left div:first-child {
   height: 153px;
-  background-color: rgb(109, 128, 229);
-  margin-bottom: 28px;
 }
-main section .info .left div:last-child {
+main section .info .left .inbox .inbox-title {
+  padding: 16px 29px 12px 29px;
+  height: 62px;
+}
+main section .info .left .inbox .inbox-title .details {
+  display: flex;
+  justify-content: space-between;
+}
+main section .info .left .inbox .inbox-title .details span:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+main section .info .left .inbox .inbox-title .details span:last-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3751FF;
+  font-family: "Poppins", sans-serif;
+}
+main section .info .left .inbox .inbox-title p {
+  color: #4B506D;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: "Poppins", sans-serif;
+}
+main section .info .left .inbox .inbox-title p span {
+  color: #9FA2B4;
+}
+main section .info .left .inbox .info-details {
+  padding: 14px 29px 12px 29px;
+  display: flex;
+  justify-content: space-between;
+}
+main section .info .left .inbox .info-details p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+}
+main section .info .left .inbox .info-details span {
+  color: #9FA2B4;
+  font-size: 14px;
+}
+main section .info .left .activity {
   height: 344px;
-  background: rgb(33, 139, 216);
+  background: #fff;
+  border-radius: 15px;
+  padding: 26px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section .info .left .activity .activity-title {
+  display: flex;
+  justify-content: space-between;
+}
+main section .info .left .activity .activity-title p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+main section .info .left .activity .activity-title span {
+  color: #3751FF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
+  font-size: 14px;
+}
+main section .info .left .activity .activity-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .info .left .activity .activity-check div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+main section .info .left .activity .activity-check .check-info {
+  background: #FEC400;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+main section .info .left .activity .activity-check .default {
+  background: #F0F1F7;
+}
+main section .info .left .activity .activity-check .new {
+  background: #29CC97;
 }
 main section .info .right {
   width: 40%;

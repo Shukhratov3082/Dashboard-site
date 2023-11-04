@@ -24,15 +24,22 @@ aside {
         flex-direction: column;
         gap: 31px;
 
-        div {
+        .btn-boxs {
+            max-width: 144px;
             height: 40px;
-            padding: 10px 14px;
+            padding: 10px 0px;
             display: flex;
-            gap: 22px;
+            align-items: center;
             border-radius: 8px;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 4px 10px 0px rgba(175, 137, 255, 0.15);
             font-family: 'Poppins', sans-serif;
+            .image-div{
+                width: 51px;
+                padding-left: 11px;
+                display: flex;
+                align-items: center;
+            }
         }
     }
     .support {
@@ -78,7 +85,8 @@ main {
     width: 80%;
     height: 100%;
     padding: 28px 28px 39px 28px;
-    background: rgba(248, 247, 252, 1);
+    // background: rgba(248, 247, 252, 1);
+    background-color: gray;
 
     header {
         width: 100%;
@@ -170,13 +178,9 @@ main {
                     position: absolute;
                     top: 25px;
                     right: 28px;
-
-
                     font-family: 'Poppins', sans-serif;
                     font-size: 60px;
                     font-weight: 600;
-
-
                 }
                 &:nth-child(1) {
                     background: linear-gradient(98.86deg, #6BAAFC 0%, #305FEC 100%);
@@ -187,6 +191,11 @@ main {
                 &:nth-child(3) {
                     background: linear-gradient(98.86deg, #D623FE 0%, #A530F2 100%);
                 }
+                img{
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                }
             }
         }
         .info {
@@ -194,24 +203,117 @@ main {
             height: 100%;
             display: flex;
             gap: 28px;
+            
 
             .left {
                 width: 60%;
-
-                div {
-                    width: 100%;
-                    height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .inbox{
+                    background-color: white;
                     border-radius: 15px;
-                    &:first-child {
-                        height: 153px;
-                        background-color: rgba(109, 128, 229, 1);
-                        margin-bottom: 28px;
+                    height: 153px;
+                    .inbox-title{
+                        padding: 16px 29px 12px 29px;
+                        height: 62px;
+                      .details{
+                         display: flex;
+                          justify-content: space-between;
+                            span:first-child{
+                                font-size: 18px;
+                                font-weight: 700;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            span:last-child{
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #3751FF;  
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+                        p{
+                            color: #4B506D;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            font-family: 'Poppins', sans-serif;
+                            span{
+                                color:  #9FA2B4;
+                            }
+                            
+                        }
                     }
-                    &:last-child {
-                        height: 344px;
-                        background: rgba(33, 139, 216, 1);
-                
+                    .info-details{
+                        padding: 14px 29px 12px 29px;
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-family: 'Poppins', sans-serif;
+                        }
+                        span{
+                            color: #9FA2B4;
+                            font-size: 14px;
+                        }
                     }
+                }
+                .activity{
+                    height: 344px;
+                    background: #fff;
+                    border-radius: 15px;
+                    padding: 26px 28px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .activity-title{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                        font-size: 18px;
+                        font-family: 'Poppins', sans-serif;
+                        }
+                        span{
+                            color: #3751FF;
+                            font-weight: 600;
+                            font-family: 'Poppins', sans-serif;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            
+                        }
+                    }
+.activity-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .check-info{
+        background: #FEC400;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 5px 12px;
+        border-radius: 8px;
+    }
+    
+    .default{
+        background: #F0F1F7;
+        
+    }
+     .new{
+        background: #29CC97;
+
+    }
+}
+
                 }
             }
             .right {
